@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         quoteViewModel.quoteModel.observe(this, Observer {
             binding.tvQuote.text = it.quote
             binding.tvAuthor.text = it.author
+            binding.tvUser!!.text = "Esteban"
         })
 
         quoteViewModel.isLoading.observe(this, Observer {
